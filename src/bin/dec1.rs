@@ -20,7 +20,7 @@ use std::collections::BinaryHeap;
 const  CAPACITY: usize = 3;
 
 fn main() {
-    let mut totals = BinaryHeap::with_capacity(3);
+    let mut totals = BinaryHeap::new(); // fuckery -> Binary Heap w. Capacity does not enforce capacity?
 
     if let Ok(lines) = read_lines("./dec_1_input.txt") {
         
